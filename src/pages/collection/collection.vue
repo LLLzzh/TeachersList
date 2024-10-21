@@ -1,6 +1,6 @@
 <template>
-  <TopBar :has-go-back="true">
-    <template #center>猫咪图鉴</template>
+  <TopBar :has-go-back="false">
+    <template #center>教师名录</template>
   </TopBar>
   <view class="content">
     <!-- 搜索框 -->
@@ -13,14 +13,14 @@
         margin: 30rpx 20rpx 10rpx;
       "
     >
-      <input v-model="searchText" maxlength="20" placeholder="搜索猫咪" />
+      <input v-model="searchText" maxlength="20" placeholder="搜索教师" />
       <image
         :src="Icons.Search"
         style="width: 60rpx; height: 60rpx"
         @click="onClickSearch"
       />
     </view>
-    <!-- 校区选择框   -->
+    <!--校区选择框-->
     <view class="school-box">
       <view class="school-select-box">
         <image :src="Icons.Location" class="arrow" />
@@ -205,7 +205,7 @@ onShow(() => {
 }
 
 .school-box {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-bottom: 30upx;
 }

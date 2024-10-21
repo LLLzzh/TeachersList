@@ -8,8 +8,10 @@
     <view class="text">
       <view class="title">{{ cat.name }}</view>
       <view class="details">
-        <view class="info">花色：{{ cat.color }}</view>
-        <view class="info">出没地区： {{ cat.area }}</view>
+        <view class="info">职称：{{ cat.color }}</view>
+        <view class="info">办公室：{{ cat.area }}</view>
+        <view class="info">办公电话：{{ `12345678910` }}</view>
+        <view class="info">邮箱：{{ `test@cs.ecnu.edu.cn` }}</view>
       </view>
     </view>
   </view>
