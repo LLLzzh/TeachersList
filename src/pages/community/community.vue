@@ -2,7 +2,7 @@
   <TopBar bg-color="#fafcff" :has-shadow="false">
     <template #left>
       <view v-if="!isRefreshing">
-        <SchoolSelectBar />
+        <!--        <SchoolSelectBar />-->
       </view>
     </template>
   </TopBar>
