@@ -228,25 +228,19 @@
         "pagePath": "pages/community/community",
         "iconPath": "static/images/community-grey.png",
         "selectedIconPath": "static/images/community-blue.png",
-        "text": "社区"
+        "text": "首页"
       },
       {
-        "pagePath": "pages/plan/plan",
-        "iconPath": "static/images/fish_grey.png",
-        "selectedIconPath": "static/images/fish_blue.png",
-        "text": "小鱼干"
+        "pagePath": "pages/collection/collection",
+        "iconPath": "static/images/teachers.png",
+        "selectedIconPath": "static/images/teachers_blue.png",
+        "text": "教师名录"
       },
       {
         "pagePath": "pages/world/world",
         "iconPath": "static/images/world-grey.png",
         "selectedIconPath": "static/images/world-blue.png",
-        "text": "世界"
-      },
-      {
-        "pagePath": "pages/profile/profile",
-        "iconPath": "static/images/mine-grey.png",
-        "selectedIconPath": "static/images/mine-blue.png",
-        "text": "我的"
+        "text": "帖子"
       }
     ]
   }

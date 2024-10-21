@@ -30,35 +30,21 @@ const tabContent = [
     icon: "/static/images/bubble_grey.png",
     activeIcon: "/static/images/bubble_blue.png",
     url: Pages.Community,
-    text: "社区"
+    text: "首页"
   },
   {
-    id: "plan",
-    icon: "/static/images/fish_grey.png",
-    activeIcon: "/static/images/fish_blue.png",
-    url: Pages.Plan,
-    text: "小鱼干"
-  },
-  {
-    id: "draft",
-    icon: "/static/images/plus-bg-blue.png",
-    activeIcon: "/static/images/plus-bg-blue.png",
-    url: Pages.DraftMoment,
-    text: ""
+    id: "collection",
+    icon: "/static/images/teachers.png",
+    activeIcon: "/static/images/teachers_blue.png",
+    url: Pages.Collection,
+    text: "教师名录"
   },
   {
     id: "world",
     icon: "/static/images/mark_grey.png",
     activeIcon: "/static/images/mark_blue.png",
     url: Pages.World,
-    text: "世界"
-  },
-  {
-    id: "profile",
-    icon: "/static/images/cat_grey.png",
-    activeIcon: "/static/images/cat_blue.png",
-    url: Pages.Profile,
-    text: "我的"
+    text: "帖子"
   }
 ];
 
@@ -79,12 +65,6 @@ function chooseTextClass(id: string) {
 }
 
 const tabChange = (path: string) => {
-  if (path === Pages.DraftMoment) {
-    uni.navigateTo({
-      url: Pages.DraftMoment
-    });
-    return;
-  }
   uni.switchTab({
     url: path
   });
@@ -95,7 +75,7 @@ const tabChange = (path: string) => {
 .tab-box {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   left: 0;

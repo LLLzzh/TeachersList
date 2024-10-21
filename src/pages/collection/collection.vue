@@ -33,6 +33,7 @@
       <SearchCats :keyword="searchText" choose="detail" />
     </template>
   </view>
+  <BottomBar id="collection" />
 </template>
 
 <script lang="ts" setup>
