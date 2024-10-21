@@ -1,0 +1,253 @@
+{
+  "pages": [
+    {
+      "path": "pages/first-page/first-page",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/profile/follow/following",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/profile/follow/follower",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/world/world",
+      "style": {
+        "navigationBarTitleText": "喵世界",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/community/community",
+      "style": {
+        "navigationBarTitleText": "喵社区",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/collection/collection",
+      "style": {
+        "navigationBarTitleText": "图鉴",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150
+      }
+    },
+    {
+      "path": "pages/plan/plan",
+      "style": {
+        "navigationBarTitleText": "小鱼干",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150
+      }
+    },
+    {
+      "path": "pages/plan/helped-plans/helped-plans",
+      "style": {
+        "navigationBarTitleText": "我助力过的小鱼干计划",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150
+      }
+    },
+    {
+      "path": "pages/plan/plan-details/plan-details",
+      "style": {
+        "navigationBarTitleText": "小鱼干计划详情",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/profile/quick-contact/quick-contact",
+      "style": {
+        "navigationBarTitleText": "快速联系"
+      }
+    },
+    {
+      "path": "pages/profile/apply-adopt/apply-adopt",
+      "style": {
+        "navigationBarTitleText": "申请领养"
+      }
+    },
+    {
+      "path": "pages/profile/apply-admin/apply-admin",
+      "style": {
+        "navigationBarTitleText": "申请管理"
+      }
+    },
+    {
+      "path": "pages/profile/about-us/about-us",
+      "style": {
+        "navigationBarTitleText": "关于我们"
+      }
+    },
+    {
+      "path": "pages/profile/edit-info/edit-info",
+      "style": {
+        "navigationBarTitleText": "修改个人信息"
+      }
+    },
+    {
+      "path": "pages/moment/moment",
+      "style": {
+        "navigationBarTitleText": "动态详情",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/post/post",
+      "style": {
+        "navigationBarTitleText": "帖子详情",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/community/school-select/school-select",
+      "style": {
+        "navigationBarTitleText": "切换学校",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/school-select/school-select",
+      "style": {
+        "navigationBarTitleText": "切换学校"
+      }
+    },
+    {
+      "path": "pages/cat/cat",
+      "style": {
+        "navigationBarTitleText": "喵详情",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/profile/personal-info/personal-info",
+      "style": {
+        "navigationBarTitleText": "用户详情",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/search/search",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/draft/draft-nav/draft-nav",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/draft/draft-moment",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/draft/draft-post",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/draft/draft-plan",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/notification/notification",
+      "style": {
+        "navigationBarTitleText": "我的消息"
+      }
+    },
+    {
+      "path": "pages/message/message",
+      "style": {
+        "navigationBarTitleText": "我的消息"
+      }
+    },
+    {
+      "path": "pages/draft/draft-image/draft-image",
+      "style": {
+        "navigationBarTitleText": "上传猫片"
+      }
+    },
+    {
+      "path": "pages/draft/choose-cat/choose-cat",
+      "style": {
+        "navigationBarTitleText": "选择猫咪",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/web-frame/web-frame"
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "喵世界",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#1FA1FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "static/images/community-grey.png",
+        "selectedIconPath": "static/images/community-blue.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "iconPath": "static/images/fish_grey.png",
+        "selectedIconPath": "static/images/fish_blue.png",
+        "text": "小鱼干"
+      },
+      {
+        "pagePath": "pages/world/world",
+        "iconPath": "static/images/world-grey.png",
+        "selectedIconPath": "static/images/world-blue.png",
+        "text": "世界"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/images/mine-grey.png",
+        "selectedIconPath": "static/images/mine-blue.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

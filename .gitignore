@@ -1,0 +1,33 @@
+.idea
+.hbuilderx
+node_modules
+dist
+unpackage
+_MACOSX
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+src/uni_modules
+
+coverage
+package-lock.json
+pnpm-lock.yaml
+*bak
+.vscode
+
+
+# visual studio code
+.history
+*.log
+functions/*
+.temp/**
+
+# screenshot
+screenshot
+.firebase
+.eslintcache
+
+build
+
+uniCloud-aliyun/

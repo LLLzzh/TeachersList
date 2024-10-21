@@ -1,0 +1,23 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: calc(8 / 390 * 100vw) 0;
+
+  .avatar {
+    width: calc(12 / 390 * 150vw);
+    height: calc(12 / 390 * 150vw);
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: calc(4 / 390 * 100vw);
+  }
+
+  .username {
+    font-size: calc(6 / 390 * 150vw);
+    color: #939393;
+  }
+
+  .username-official {
+    font-size: calc(6 / 390 * 150vw);
+    color: #1c74b9;
+  }
+}
