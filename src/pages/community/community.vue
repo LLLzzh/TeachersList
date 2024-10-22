@@ -31,15 +31,6 @@
   </view>
 
   <BottomBar id="community" />
-
-  <template v-if="showToastBox">
-    <ToastBoxWithShadow
-      bold-normal-text="获得小鱼干"
-      :bold-blue-text="'*' + gottenFishAmount"
-      grey-text="今日首次上线"
-      @close="closeToastBox"
-    />
-  </template>
 </template>
 
 <script lang="ts" setup>
