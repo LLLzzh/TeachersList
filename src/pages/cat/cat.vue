@@ -1,20 +1,12 @@
 <template>
   <view v-if="show && cat">
-    <image
-      :src="mainImgUrl"
-      class="cat-image"
-      mode="aspectFill"
-      @click="onClickAvatar(mainImgUrl, cat.avatars)"
-    />
+    <image :src="mainImgUrl" class="cat-image" mode="aspectFill" />
     <view class="goBackButton" @click="goBack">
       <view class="left-arrow" />
     </view>
     <view class="main">
       <Header :cat="cat" />
       <MetaInfo :cat="cat" />
-      <Guide :cat="cat" />
-      <!--      <Story :cat="cat" />-->
-      <Photos :id="props.id" :cat="cat" />
     </view>
   </view>
 </template>
@@ -23,15 +15,11 @@
 import { reactive, ref } from "vue";
 
 import Header from "@/pages/cat/header.vue";
-import Guide from "@/pages/cat/guide.vue";
-import Story from "@/pages/cat/story.vue";
 import MetaInfo from "@/pages/cat/meta-info.vue";
 import { Cat } from "@/apis/schemas";
-import Photos from "@/pages/cat/photos.vue";
-import { onClickAvatar } from "@/pages/cat/utils";
 import { getCatDetail } from "@/apis/collection/collection";
 import { GetCatDetailReq } from "@/apis/collection/collection-interfaces";
-import { onPullDownRefresh, onShow } from "@dcloudio/uni-app";
+import { onPullDownRefresh } from "@dcloudio/uni-app";
 import { refresh } from "@/utils/utils";
 
 const show = ref(false);
@@ -70,10 +58,12 @@ onPullDownRefresh(() => {
 <style lang="scss" scoped>
 .cat-image {
   position: fixed;
-  width: 100vw;
-  height: 68vw;
-  z-index: -1;
-  top: 0;
+  width: 30vw;
+  height: 30vw;
+  top: 21vw;
+  right: 10vw;
+  left: auto;
+  border-radius: 15vw;
 }
 
 .goBackButton {
@@ -82,7 +72,7 @@ onPullDownRefresh(() => {
   height: 10vw;
   border-radius: 5vw;
   background-color: #1d1d1d;
-  margin-top: -48vw;
+  margin-top: -18vw;
   margin-left: 4vw;
   margin-right: 4vw;
   opacity: 0.3;
@@ -105,7 +95,7 @@ onPullDownRefresh(() => {
 
 .main {
   border-radius: 4vw 4vw 0 0;
-  margin-top: 60vw;
+  margin-top: 30vw;
   width: 100vw;
   background-color: #ffffff;
 }

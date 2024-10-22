@@ -25,7 +25,7 @@ const props = defineProps<Props>();
 
 <style lang="scss" scoped>
 .header {
-  margin-top: 4vw;
+  margin-top: 3vw;
   margin-left: 6vw;
   margin-right: 6vw;
 
@@ -36,7 +36,7 @@ const props = defineProps<Props>();
     display: flex;
     align-items: center;
     margin-bottom: 1vw;
-    margin-top: 6vw;
+    margin-top: 4vw;
     /* .like{
 		margin-left: 65vw;
 		width:5vw;
