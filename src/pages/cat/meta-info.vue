@@ -1,35 +1,85 @@
 <template>
   <view class="info">
-    <view class="tile" style="width: 32vw">
-      <view class="key">绝育情况</view>
+    <view class="tile" style="width: 42vw">
+      <view class="key">部门</view>
       <view class="value">
-        {{ props.cat.isSterilized ? "已绝育" : "未绝育" }}
+        {{ `计算机科学与技术学院` }}
       </view>
     </view>
-    <view class="tile" style="width: 25vw">
-      <view class="key">花色</view>
+    <view class="tile" style="width: 42vw">
+      <view class="key">联系电话</view>
       <view class="value">
-        {{ props.cat.color }}
+        {{ `12345678910` }}
       </view>
     </view>
-    <view class="tile" style="width: 25vw">
+  </view>
+  <view class="info">
+    <view class="tile" style="width: 22vw">
       <view class="key">性别</view>
       <view class="value">
         {{ props.cat.sex }}
       </view>
     </view>
-  </view>
-  <view class="info">
-    <view class="tile" style="width: 25vw">
-      <view class="key">年龄</view>
+    <view class="tile" style="width: 62vw">
+      <view class="key">通讯地址</view>
       <view class="value">
-        {{ props.cat.age }}
+        {{ `上海市普陀区中山北路3663号` }}
       </view>
     </view>
-    <view class="tile" style="width: 60vw">
-      <view class="key">出没地区</view>
+  </view>
+  <view class="info">
+    <view class="tile" style="width: 32vw">
+      <view class="key">专业技术职务</view>
       <view class="value">
-        {{ props.cat.area }}
+        {{ `青年研究员` }}
+      </view>
+    </view>
+    <view class="tile" style="width: 52vw">
+      <view class="key">办公地址</view>
+      <view class="value">
+        {{ `理科大楼A123` }}
+      </view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="tile" style="width: 52vw">
+      <view class="key">毕业院校</view>
+      <view class="value">
+        {{ `华东师范大学` }}
+      </view>
+    </view>
+    <view class="tile" style="width: 32vw">
+      <view class="key">邮编</view>
+      <view class="value">
+        {{ `200062` }}
+      </view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="tile" style="width: 28vw">
+      <view class="key">学位</view>
+      <view class="value">
+        {{ `工学博士` }}
+      </view>
+    </view>
+    <view class="tile" style="width: 56vw">
+      <view class="key">电子邮箱</view>
+      <view class="value">
+        {{ `test@cs.ecnu.edu.cn` }}
+      </view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="tile" style="width: 42vw">
+      <view class="key">学历</view>
+      <view class="value">
+        {{ `博士研究生` }}
+      </view>
+    </view>
+    <view class="tile" style="width: 42vw">
+      <view class="key">传真</view>
+      <view class="value">
+        {{ `12345678` }}
       </view>
     </view>
   </view>
@@ -61,12 +111,12 @@ const props = defineProps<Props>();
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25vw;
+    height: 15vw;
     .key {
       color: #1fa1ff;
       font-size: 3.5vw;
       width: fit-content;
-      margin-bottom: 4vw;
+      margin-bottom: 2.5vw;
     }
     .value {
       font-size: 4vw;
