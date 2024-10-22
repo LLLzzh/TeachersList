@@ -47,48 +47,15 @@
           :key="cat.id"
           class="font-md mb-2"
           style="color: #5272ff; margin: 10rpx 0 0"
-          @click="onClickCatBox(cat.id)"
         >
-          @{{ cat.name }}
         </view>
         <view v-if="moment.text" class="post-content font-md">
           {{ moment.text }}
         </view>
-        <view v-if="moment.likeCount" class="like-info">
-          {{ moment.likeCount }} 位喵友觉得很赞
-        </view>
       </view>
-      <view v-if="!comments.length" class="commentNum"> 评论</view>
-      <view v-else class="commentNum"> 评论 {{ moment.commentCount }} </view>
-      <view v-if="!comments.length">
-        <view class="nomore">这里还没有评论，快发布第一条评论吧！</view>
-      </view>
-      <CommentBox
-        v-for="(comment, index) in comments"
-        :key="index"
-        :comment="comment"
-        @after-delete="init()"
-        @interact-with-comment="focusReplyComment(comment)"
-        @on-click-replies="onClickReplies(comment)"
-        @local-do-like="likeComment(comment, fishAwardEmitter)"
-      />
       <view :style="'padding-bottom:' + wcbHeight.toString() + 'px'" />
     </view>
   </view>
-  <WriteCommentBox
-    v-if="moment"
-    :like-count="moment.likeCount"
-    :is-liked="moment.isLiked"
-    :parent-id="moment.id"
-    :parent-type="CommentType.Moment"
-    :first-level-comment="firstLevelComment"
-    :reply-comment="replyComment"
-    :focus="writeBoxFocus"
-    :comment-callback="(res) => fishAwardEmitter.triggerCallbacks(res)"
-    @do-like="likeMoment(moment, fishAwardEmitter)"
-    @after-create-comment="init"
-    @blur="afterBlur"
-  />
 
   <view v-if="isReplyOpened && selectComment">
     <Reply
@@ -99,33 +66,6 @@
       @close="closeReply"
     />
   </view>
-  <view
-    v-if="isShowDeleteDialogue"
-    class="confirm-to-delete"
-    @touchmove.stop.prevent
-  >
-    <view class="box">
-      <view class="texts">
-        <view class="title">确认删除此条动态？</view>
-        <view class="subtitle">删除后动态将无法查看</view>
-      </view>
-      <view class="buttons">
-        <view class="button blue" @click="closeDeleteDialogue">我再想想</view>
-        <view class="button grey" @click="deleteThisMoment">删除</view>
-      </view>
-    </view>
-  </view>
-  <ToastBoxWithShadow
-    v-if="showToastBox"
-    bold-normal-text="获得小鱼干"
-    :bold-blue-text="'*' + gotFishNum"
-    grey-text="每日点评或点赞均可获得小鱼干"
-    @close="
-      () => {
-        showToastBox = false;
-      }
-    "
-  />
 </template>
 
 <script lang="ts" setup>

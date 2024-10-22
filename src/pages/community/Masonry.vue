@@ -10,13 +10,6 @@
         :key="moment.id"
       >
         <view class="tile" @click="onClickMoment(moment.id)">
-          <view class="school-box">
-            <view class="school">
-              <view class="school-name">{{
-                getSchoolName(moment.communityId)
-              }}</view>
-            </view>
-          </view>
           <view class="img-frame">
             <image
               v-if="i === 1"
@@ -53,26 +46,13 @@
                 {{ displayTime(moment.createAt) }}
               </view>
             </view>
-            <view
-              v-if="moment.likeCount || moment.commentCount"
-              class="other-info"
-            >
-              <view v-if="moment.likeCount" class="font-sm"
-                >{{ moment.likeCount }}位喵友觉得很赞
-              </view>
-              <view v-if="moment.commentCount" class="comment font-sm"
-                >{{ moment.commentCount }}条回复</view
-              >
-            </view>
           </view>
         </view>
       </template>
     </view>
   </view>
   <view v-if="isNoData">
-    <view class="no-cat-here-frame">
-      <image :src="Pictures.NoCatHere" class="no-cat-here" />
-    </view>
+    <view class="no-cat-here-frame" />
   </view>
 </template>
 

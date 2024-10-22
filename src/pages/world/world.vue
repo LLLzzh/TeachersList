@@ -1,6 +1,6 @@
 <template>
   <TopBar>
-    <template #left/>
+    <template #left />
     <template #center>课程帖子</template>
   </TopBar>
   <view class="navbar">
