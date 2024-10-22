@@ -1,13 +1,7 @@
 <template>
   <TopBar>
-    <template #left>
-      <view style="height: fit-content" @click="enterMessage">
-        <image :src="Icons.Message" mode="scaleToFill" class="message-image" />
-        <!-- 暂时将数量写为0 -->
-        <view v-show="false" class="font-sm px-1 message-count">0</view>
-      </view>
-    </template>
-    <template #center>喵世界</template>
+    <template #left/>
+    <template #center>课程帖子</template>
   </TopBar>
   <view class="navbar">
     <template v-for="(tab, index) of tabs" :key="tab.name">
@@ -16,7 +10,6 @@
         {{ tab.name }}
       </view>
     </template>
-    <view class="search" @click.prevent="search" />
   </view>
 
   <view class="blue-background">
