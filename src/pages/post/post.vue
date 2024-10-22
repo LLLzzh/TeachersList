@@ -14,9 +14,6 @@
           @click="showDeleteDialogue"
         />
       </view>
-      <view class="head-info">
-        {{ displayTime(post.createAt) }} · {{ post.comments }}条回复
-      </view>
       <view v-if="post.tags" class="tags">
         <image class="tagIcon" :src="Icons.Tag" />
         <view v-for="(item, index) in post.tags" :key="index" class="tag">
@@ -42,39 +39,9 @@
         mode="widthFix"
         @click="onClickImage(post.coverUrl)"
       />
-      <view v-if="comments.length === 0" class="commentNum"> 评论</view>
-      <view v-else class="commentNum"> 评论 {{ post.comments }} </view>
-      <view v-if="comments.length === 0">
-        <view class="nomore">这里还没有评论，快发布第一条评论吧！</view>
-      </view>
-
-      <CommentBox
-        v-for="(comment, index) in comments"
-        :key="index"
-        :comment="comment"
-        @after-delete="init"
-        @interact-with-comment="focusReplyComment(comment)"
-        @on-click-replies="onClickReplies(comment)"
-        @local-do-like="likeComment(comment, fishAwardEmitter)"
-      />
       <view :style="'padding-bottom:' + wcbHeight.toString() + 'px'" />
     </view>
   </view>
-  <WriteCommentBox
-    v-if="post"
-    :is-liked="post.isLiked || false"
-    :like-count="post.likes"
-    :parent-type="CommentType.Post"
-    :parent-id="post.id"
-    :first-level-comment="firstLevelComment"
-    :reply-comment="replyComment"
-    :focus="writeBoxFocus"
-    :comment-callback="(res) => fishAwardEmitter.triggerCallbacks(res)"
-    @do-like="likePost(post, fishAwardEmitter)"
-    @after-create-comment="init"
-    @blur="afterBlur"
-  />
-
   <view v-if="isReplyOpened && selectComment" class="reply">
     <reply
       :main-comment="selectComment"
@@ -88,48 +55,23 @@
     class="confirm-to-delete"
     @touchmove.stop.prevent
   >
-    <view class="box">
-      <view class="texts">
-        <view class="title">确认删除此篇帖子？</view>
-        <view class="subtitle">删除后帖子将无法查看</view>
-      </view>
-      <view class="buttons">
-        <view class="button blue" @click="closeDeleteDialogue">我再想想</view>
-        <view class="button grey" @click="deleteThisPost">删除</view>
-      </view>
-    </view>
   </view>
-  <ToastBoxWithShadow
-    v-if="showToastBox"
-    bold-normal-text="获得小鱼干"
-    :bold-blue-text="'*' + gotFishNum"
-    grey-text="每日点评或点赞均可获得小鱼干"
-    @close="
-      () => {
-        showToastBox = false;
-      }
-    "
-  />
 </template>
 <script lang="ts" setup>
 import { nextTick, reactive, ref } from "vue";
 import TopBar from "@/components/TopBar.vue";
-import { enterMask, enterReply, likeComment } from "@/pages/moment/utils";
+import { enterMask, enterReply } from "@/pages/moment/utils";
 import Reply from "@/pages/moment/Reply.vue";
 import { toPersonInfo } from "@/pages/profile/utils";
 import { GetPostDetailReq } from "@/apis/post/post-interfaces";
 import { Comment, FishAward, Post, TargetType } from "@/apis/schemas";
 import { deletePost, getPostDetail } from "@/apis/post/post";
-import { displayTime } from "@/utils/time";
 import { doLike } from "@/apis/like/like";
 import { CommentType, GetCommentsReq } from "@/apis/comment/comment-interfaces";
 import { onLoad, onPullDownRefresh, onReachBottom } from "@dcloudio/uni-app";
-import WriteCommentBox from "@/pages/moment/WriteCommentBox.vue";
-import CommentBox from "@/pages/moment/CommentBox.vue";
-import { likePost, onClickImage } from "@/pages/post/utils";
+import { onClickImage } from "@/pages/post/utils";
 import { Icons, Pages } from "@/utils/url";
 import { StorageKeys } from "@/utils/const";
-import ToastBoxWithShadow from "@/components/ToastBoxWithShadow.vue";
 import { EventEmitter, getThumbnail } from "@/utils/utils";
 import { getComments } from "@/apis/comment/comment";
 

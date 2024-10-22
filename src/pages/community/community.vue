@@ -14,7 +14,6 @@
 
     <view style="height: 2vw" />
 
-
     <!--cards是未使用的功能，暂时不管-->
     <view v-if="false">
       <Cards :card-list="cardList" />

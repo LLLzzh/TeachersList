@@ -47,8 +47,7 @@
           :key="cat.id"
           class="font-md mb-2"
           style="color: #5272ff; margin: 10rpx 0 0"
-        >
-        </view>
+        />
         <view v-if="moment.text" class="post-content font-md">
           {{ moment.text }}
         </view>
