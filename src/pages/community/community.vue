@@ -1,10 +1,5 @@
 <template>
   <TopBar bg-color="#fafcff" :has-shadow="false">
-    <template #left>
-      <view v-if="!isRefreshing">
-        <!--        <SchoolSelectBar />-->
-      </view>
-    </template>
   </TopBar>
 
   <view class="background">
@@ -51,7 +46,7 @@ import Masonry from "@/pages/community/Masonry.vue";
 const communityId = ref(uni.getStorageSync(StorageKeys.CommunityId));
 const cardList = reactive(["", "", "", "", "", ""]);
 
-const isRefreshing = ref(true);
+const isRefreshing = ref(false);
 
 const showToastBox = ref(false);
 const closeToastBox = () => {
@@ -72,9 +67,9 @@ onPullDownRefresh(() => {
 });
 
 onLoad(() => {
-  if (needChooseCommunity.value) {
-    uni.navigateTo({ url: Pages.SchoolSelect });
-  }
+  // if (needChooseCommunity.value) {
+  //   uni.navigateTo({ url: Pages.SchoolSelect });
+  // }
   uni.showLoading({
     title: "加载中"
   });

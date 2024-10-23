@@ -139,7 +139,7 @@
     {
       "path": "pages/cat/cat",
       "style": {
-        "navigationBarTitleText": "喵详情",
+        "navigationBarTitleText": "教师个人主页",
         "enablePullDownRefresh": true
       }
     },

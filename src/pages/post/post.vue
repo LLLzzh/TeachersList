@@ -54,8 +54,7 @@
     v-if="isShowDeleteDialogue"
     class="confirm-to-delete"
     @touchmove.stop.prevent
-  >
-  </view>
+  />
 </template>
 <script lang="ts" setup>
 import { nextTick, reactive, ref } from "vue";
