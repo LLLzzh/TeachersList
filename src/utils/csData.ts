@@ -1,14 +1,6 @@
-export interface teacher {
-  id: number;
-  imgUrl: string;
-  name: string;
-  title: string;
-  office: string;
-  phone: string;
-  email: string;
-}
+import { TeacherPreview } from "@/apis/schemas";
 
-export const teachers: teacher[] = [
+export const teachers: TeacherPreview[] = [
   {
     id: 0,
     imgUrl:

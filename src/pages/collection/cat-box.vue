@@ -14,19 +14,10 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive } from "vue";
-import { CatPreview } from "@/apis/schemas";
-import { getThumbnail } from "@/utils/utils";
+import { TeacherPreview } from "@/apis/schemas";
 
 const props = defineProps<{
-  teacher: {
-    imgUrl: string;
-    name: string;
-    title: string;
-    office: string;
-    phone: string;
-    email: string;
-  };
+  teacher: TeacherPreview;
 }>();
 </script>
 

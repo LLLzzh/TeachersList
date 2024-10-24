@@ -199,3 +199,24 @@ export interface FishAward {
   getFishNum: number;
   getFishTimes: number;
 }
+
+export interface TeacherPreview {
+  id: number;
+  imgUrl: string;
+  name: string;
+  title: string;
+  office: string;
+  phone: string;
+  email: string;
+}
+
+export interface Teacher {
+  id: number;
+  imgUrl: string;
+  name: string;
+  gender: string;
+  title: string;
+  office: string;
+  phone: string;
+  email: string;
+}
