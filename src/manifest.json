@@ -1,6 +1,6 @@
 {
-  "name": "喵言喵语 Meow",
-  "appid": "wxd7e995c7b9d793b8",
+  "name": "cs课程交流系统",
+  "appid": "wx1a6f4b4f025b831e",
   "description": "",
   "versionName": "1.0.0",
   "versionCode": "100",
@@ -50,7 +50,7 @@
   "quickapp": {},
   /* 小程序特有相关 */
   "mp-weixin": {
-    "appid": "wxd7e995c7b9d793b8",
+    "appid": "wx1a6f4b4f025b831e",
     "optimization": {
       "subPackages": true
     },

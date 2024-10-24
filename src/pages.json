@@ -21,7 +21,7 @@
     {
       "path": "pages/world/world",
       "style": {
-        "navigationBarTitleText": "喵世界",
+        "navigationBarTitleText": "首页",
         "navigationStyle": "custom",
         "enablePullDownRefresh": true
       }
@@ -29,7 +29,7 @@
     {
       "path": "pages/community/community",
       "style": {
-        "navigationBarTitleText": "喵社区",
+        "navigationBarTitleText": "帖子",
         "navigationStyle": "custom",
         "enablePullDownRefresh": true
       }
@@ -37,7 +37,7 @@
     {
       "path": "pages/collection/collection",
       "style": {
-        "navigationBarTitleText": "图鉴",
+        "navigationBarTitleText": "教师名录",
         "navigationStyle": "custom",
         "enablePullDownRefresh": true,
         "onReachBottomDistance": 150
