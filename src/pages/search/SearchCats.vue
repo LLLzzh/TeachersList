@@ -1,8 +1,8 @@
 <template>
-  <view v-if="catsData.length" style="padding-bottom: 10rpx">
-    <view v-for="cat of catsData" :key="cat.id">
-      <view @click="onClickCatBox(cat.avatarUrl, cat.name, cat.id)">
-        <cat-box :cat="cat" />
+  <view v-if="teachers.length" style="padding-bottom: 10rpx">
+    <view v-for="teacher in teachers" :key="teacher.id">
+      <view @click="onClickCatBox(teacher.imgUrl, teacher.name, teacher.id)">
+        <cat-box :teacher="teacher" />
       </view>
     </view>
   </view>
@@ -22,6 +22,7 @@ import { CatPreview } from "@/apis/schemas";
 import { StorageKeys } from "@/utils/const";
 import { GetCatPreviewsReq } from "@/apis/collection/collection-interfaces";
 import { getPrefetchData, PrefetchResp } from "@/apis/prefetch";
+import { teachers } from "@/utils/csData";
 
 interface Props {
   keyword?: string;
@@ -80,7 +81,7 @@ onReachBottom(() => {
 
 // 点击选择的猫咪照片
 const catImage = ref("");
-const catName = ref("猫猫");
+const catName = ref("");
 const catId = ref("");
 
 function onClickCatBox(avatarUrl: string, name: string, id: string) {

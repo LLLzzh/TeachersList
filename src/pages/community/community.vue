@@ -23,6 +23,7 @@
   </view>
 
   <BottomBar id="community" />
+  <DebugPanel />
 </template>
 
 <script lang="ts" setup>
@@ -41,6 +42,7 @@ import { Pages } from "@/utils/url";
 import ToastBoxWithShadow from "@/components/ToastBoxWithShadow.vue";
 import { buildLoader } from "@/pages/community/utils";
 import Masonry from "@/pages/community/Masonry.vue";
+import DebugPanel from "@/components/DebugPanel.vue";
 
 const communityId = ref(uni.getStorageSync(StorageKeys.CommunityId));
 const cardList = reactive(["", "", "", "", "", ""]);

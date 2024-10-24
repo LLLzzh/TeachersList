@@ -1,17 +1,13 @@
 <template>
   <view class="cats-box">
-    <image
-      :src="getThumbnail(cat.avatarUrl)"
-      class="avatar"
-      mode="aspectFill"
-    />
+    <image :src="teacher.imgUrl" class="avatar" mode="aspectFill" />
     <view class="text">
-      <view class="title">{{ cat.name }}</view>
+      <view class="title">{{ teacher.name }}</view>
       <view class="details">
-        <view class="info">职称：{{ cat.color }}</view>
-        <view class="info">办公室：{{ cat.area }}</view>
-        <view class="info">办公电话：{{ `12345678910` }}</view>
-        <view class="info">邮箱：{{ `test@cs.ecnu.edu.cn` }}</view>
+        <view class="info">职称：{{ teacher.title }}</view>
+        <view class="info">办公室：{{ teacher.office }}</view>
+        <view class="info">办公电话：{{ teacher.phone }}</view>
+        <view class="info">邮箱：{{ teacher.email }}</view>
       </view>
     </view>
   </view>
@@ -22,8 +18,16 @@ import { reactive } from "vue";
 import { CatPreview } from "@/apis/schemas";
 import { getThumbnail } from "@/utils/utils";
 
-const props = defineProps<{ cat: CatPreview }>();
-const cat = reactive(props.cat);
+const props = defineProps<{
+  teacher: {
+    imgUrl: string;
+    name: string;
+    title: string;
+    office: string;
+    phone: string;
+    email: string;
+  };
+}>();
 </script>
 
 <style lang="scss" scoped>
