@@ -1,12 +1,18 @@
 <template>
   <view class="info">
-    <view class="tile" style="width: 42vw">
-      <view class="key">部门</view>
+    <view class="tile" style="width: 16vw">
+      <view class="key">性别</view>
       <view class="value">
-        {{ `计算机科学与技术学院` }}
+        {{ props.cat.sex }}
       </view>
     </view>
-    <view class="tile" style="width: 42vw">
+    <view class="tile" style="width: 30vw">
+      <view class="key">专业技术职务</view>
+      <view class="value">
+        {{ `青年研究员` }}
+      </view>
+    </view>
+    <view class="tile" style="width: 36vw">
       <view class="key">联系电话</view>
       <view class="value">
         {{ `12345678910` }}
@@ -14,41 +20,27 @@
     </view>
   </view>
   <view class="info">
-    <view class="tile" style="width: 22vw">
-      <view class="key">性别</view>
-      <view class="value">
-        {{ props.cat.sex }}
-      </view>
-    </view>
-    <view class="tile" style="width: 62vw">
-      <view class="key">通讯地址</view>
-      <view class="value">
-        {{ `上海市普陀区中山北路3663号` }}
-      </view>
-    </view>
-  </view>
-  <view class="info">
-    <view class="tile" style="width: 32vw">
-      <view class="key">专业技术职务</view>
-      <view class="value">
-        {{ `青年研究员` }}
-      </view>
-    </view>
-    <view class="tile" style="width: 52vw">
-      <view class="key">办公地址</view>
-      <view class="value">
-        {{ `理科大楼A123` }}
-      </view>
-    </view>
-  </view>
-  <view class="info">
-    <view class="tile" style="width: 52vw">
+    <view class="tile" style="width: 49vw">
       <view class="key">毕业院校</view>
       <view class="value">
         {{ `华东师范大学` }}
       </view>
     </view>
-    <view class="tile" style="width: 32vw">
+    <view class="tile" style="width: 36vw">
+      <view class="key">学位</view>
+      <view class="value">
+        {{ `工学博士` }}
+      </view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="tile" style="width: 49vw">
+      <view class="key">办公地址</view>
+      <view class="value">
+        {{ `理科大楼A123` }}
+      </view>
+    </view>
+    <view class="tile" style="width: 36vw">
       <view class="key">邮编</view>
       <view class="value">
         {{ `200062` }}
@@ -56,30 +48,18 @@
     </view>
   </view>
   <view class="info">
-    <view class="tile" style="width: 28vw">
-      <view class="key">学位</view>
+    <view class="tile" style="width: 88vw">
+      <view class="key">通讯地址</view>
       <view class="value">
-        {{ `工学博士` }}
-      </view>
-    </view>
-    <view class="tile" style="width: 56vw">
-      <view class="key">电子邮箱</view>
-      <view class="value">
-        {{ `test@cs.ecnu.edu.cn` }}
+        {{ `上海市普陀区中山北路3663号` }}
       </view>
     </view>
   </view>
   <view class="info">
-    <view class="tile" style="width: 42vw">
-      <view class="key">学历</view>
+    <view class="tile" style="width: 88vw">
+      <view class="key">电子邮箱</view>
       <view class="value">
-        {{ `博士研究生` }}
-      </view>
-    </view>
-    <view class="tile" style="width: 42vw">
-      <view class="key">传真</view>
-      <view class="value">
-        {{ `12345678` }}
+        {{ `test@cs.ecnu.edu.cn` }}
       </view>
     </view>
   </view>

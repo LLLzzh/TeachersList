@@ -1,6 +1,5 @@
 <template>
-  <TopBar bg-color="#fafcff" :has-shadow="false">
-  </TopBar>
+  <TopBar bg-color="#fafcff" :has-shadow="false" />
 
   <view class="background">
     <view v-if="!isRefreshing">
