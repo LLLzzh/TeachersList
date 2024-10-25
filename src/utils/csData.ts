@@ -1,4 +1,4 @@
-import { Teacher } from "@/apis/schemas";
+import { Teacher, News, Moment } from "@/apis/schemas";
 
 export const teachers: Teacher[] = [
   {
@@ -1111,5 +1111,100 @@ export const teachers: Teacher[] = [
     university: "浙江大学",
     degree: "博士",
     homepage: "https://faculty.ecnu.edu.cn/_s8/jb2/main.psp"
+  }
+];
+
+export const carouselData: News[] = [
+  {
+    id: "0",
+    imageUrl:
+      "http://www.cs.ecnu.edu.cn/_upload/article/images/d9/55/d452c7404c7081f749693a663218/c07db41e-bd2a-46b6-9329-1b7374eb6326.png",
+    linkUrl: "",
+    type: "news",
+    user: {}
+  },
+  {
+    id: "1",
+    imageUrl:
+      "http://www.cs.ecnu.edu.cn/_upload/article/images/9b/69/8c3af94b4f6889757e1d6b35fabf/f1824e0d-023c-4687-82cb-7bebe89b1d82.png",
+    linkUrl: "",
+    type: "news",
+    user: {}
+  },
+  {
+    id: "2",
+    imageUrl:
+      "http://www.cs.ecnu.edu.cn/_upload/article/images/7d/77/68a8d2c14731b5eb0cb056cf9a44/69791f20-6dab-4748-9d52-1e55a2defe59.png",
+    linkUrl: "",
+    type: "news",
+    user: {}
+  }
+];
+
+export const moments: Moment[] = [
+  {
+    id: "123456789",
+    title: "操作系统概念（原书第9版）",
+    photos: ["https://img9.doubanio.com/view/subject/s/public/s4510534.jpg"],
+    text: "本书是面向操作系统导论课程的经典书籍，从第1版至今被国内外众多高校选作教材。全书共六部分，不仅详细讲解了进程管理、内存管理、存储管理、保护与安全等概念，而且涵盖重要的理论结果和案例研究，并且给出了供读者深入学习的推荐读物。这一版新增了多核系统和移动计算的内容，每一章都融入了新的技术进展，并且更新了习题和编程项目。本书既适合高等院校计算机相关专业的学生学习，也是专业技术人员的有益参考。",
+    user: {
+      id: "0",
+      nickname: "计算机科学丛书",
+      avatarUrl:
+        "http://www.cs.ecnu.edu.cn/_upload/tpl/0e/6e/3694/template3694/images/logo.png"
+    },
+    createAt: "2024-10-25T12:00:00Z"
+  },
+  {
+    id: "1234567897",
+    title: "视觉计算基础：计算机视觉、图形学和图像处理的核心概念",
+    photos: ["https://img3.doubanio.com/view/subject/s/public/s1959967.jpg"],
+    text: "本书涵盖了视觉计算的基本概念。为创建、获取、分析和操作视觉数据(如二维图像,三维模型)提供了一个统一的计算和数学处理方法。书中涉及的基本原理包括：卷积、傅里叶变换、滤波器、几何变换、超极几何、三维重建、色彩和图像合成管道。这本书是为一个16周的学期课程而写的，既可以用于本科生和研究生的教学，也可以作为专业人员的参考。",
+    user: {
+      id: "0",
+      nickname: "计算机科学丛书",
+      avatarUrl:
+        "http://www.cs.ecnu.edu.cn/_upload/tpl/0e/6e/3694/template3694/images/logo.png"
+    },
+    createAt: "2024-10-25T12:00:00Z"
+  },
+  {
+    id: "87945613",
+    title: "计算机科学导论（原书第3版）",
+    photos: ["https://img9.doubanio.com/view/subject/s/public/s1106934.jpg"],
+    text: "本书是大学计算机相关专业的基础课教材，涉及计算机科学的各个方面。本书着重讲解基本概念而不是数学模型和技术细节，通过大量的图表和演示范例讲解计算机科学的基础知识；每章后面的关键术语、小结和练习有助于读者掌握和复习知识要点。本书内容丰富，通熟易懂，既适合当作大专院校的计算机基础课教材，也可作为一般的计算机基础入门读物。",
+    user: {
+      id: "0",
+      nickname: "计算机科学丛书",
+      avatarUrl:
+        "http://www.cs.ecnu.edu.cn/_upload/tpl/0e/6e/3694/template3694/images/logo.png"
+    },
+    createAt: "2024-10-25T12:00:00Z"
+  },
+  {
+    id: "456789123",
+    title: "数据结构与算法：Python语言实现",
+    photos: ["https://img3.doubanio.com/view/subject/s/public/s3895413.jpg"],
+    text: "本书采用Python语言介绍数据结构和算法，包括其设计、分析和实施。本书源代码简洁、明确，面向对象的观点贯穿始终，通过继承最大限度地提高代码重用，同时彰显不同抽象数据类型和算法之间的异同。",
+    user: {
+      id: "0",
+      nickname: "计算机科学丛书",
+      avatarUrl:
+        "http://www.cs.ecnu.edu.cn/_upload/tpl/0e/6e/3694/template3694/images/logo.png"
+    },
+    createAt: "2024-10-25T12:00:00Z"
+  },
+  {
+    id: "369258147",
+    title: "数据结构与算法分析：Java语言描述（原书第3版）",
+    photos: ["https://img9.doubanio.com/view/subject/s/public/s27243455.jpg"],
+    text: "本书是国外数据结构与算法分析方面的经典教材，使用卓越的Java编程语言作为实现工具讨论了数据结构(组织大量数据的方法)和算法分析(对算法运行时间的估计)。本书把算法分析与有效率的Java程序的开发有机地结合起来，深入分析每种算法，内容全面、缜密严格，并细致讲解精心构造程序的方法。",
+    user: {
+      id: "0",
+      nickname: "计算机科学丛书",
+      avatarUrl:
+        "http://www.cs.ecnu.edu.cn/_upload/tpl/0e/6e/3694/template3694/images/logo.png"
+    },
+    createAt: "2024-10-25T12:00:00Z"
   }
 ];

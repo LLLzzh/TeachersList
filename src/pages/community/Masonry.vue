@@ -13,7 +13,7 @@
           <view class="img-frame">
             <image
               v-if="i === 1"
-              :src="getThumbnail(moment.photos[0])"
+              :src="moment.photos[0]"
               class="img"
               mode="widthFix"
               @error="onLoad"
@@ -21,7 +21,7 @@
             />
             <image
               v-else
-              :src="getThumbnail(moment.photos[0])"
+              :src="moment.photos[0]"
               class="img"
               mode="widthFix"
               @error="onLoad"
@@ -33,17 +33,14 @@
             <view class="other-info">
               <view class="user-info">
                 <template v-if="moment.user">
-                  <image
-                    :src="getThumbnail(moment.user.avatarUrl)"
-                    class="avatar"
-                  />
+                  <image :src="moment.user.avatarUrl" class="avatar" />
                   <view class="username font-md">
                     {{ moment.user.nickname }}
                   </view>
                 </template>
               </view>
               <view class="time font-sm">
-                {{ displayTime(moment.createAt) }}
+                {{ moment.createAt.substring(0, 10) }}
               </view>
             </view>
           </view>
@@ -66,6 +63,9 @@ import { Pictures } from "@/utils/url";
 import { getThumbnail } from "@/utils/utils";
 import { getSchoolName } from "@/utils/school";
 import { listCommunity } from "@/apis/community/community";
+import { isConstAssertionExpression } from "ts-api-utils";
+import { fetch } from "licia";
+import { moments as localMoments } from "@/utils/csData";
 
 interface Props {
   loader?: () => Promise<Moment[]>;
@@ -73,8 +73,13 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+
+const loadLocalMoments = (): Promise<Moment[]> => {
+  return localMoments;
+};
+
 const isNoData = ref(true);
-const loader = props.loader || props.loaderBuilder?.();
+const loader = props.loader || loadLocalMoments;
 let momentsInBatch: Moment[];
 const leftMoments = reactive<Moment[]>([]);
 const rightMoments = reactive<Moment[]>([]);

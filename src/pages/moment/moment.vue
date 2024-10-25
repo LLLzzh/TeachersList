@@ -1,6 +1,6 @@
 <template>
   <TopBar :has-go-back="true">
-    <template #center>动态详情</template>
+    <template #center>书本详情</template>
   </TopBar>
   <view class="reply-mask" @click="leaveReply()" />
 
@@ -8,15 +8,13 @@
     <view class="container">
       <view class="post-info-box">
         <view class="poster-info-box">
-          <image
-            :src="getThumbnail(moment.user.avatarUrl)"
-            class="poster-profile"
-            @click="toPersonInfo(moment.user.id)"
-          />
-          <text class="poster-name" @click="toPersonInfo(moment.user.id)">
+          <image :src="moment.user.avatarUrl" class="poster-profile" />
+          <text class="poster-name">
             {{ moment.user.nickname }}
           </text>
-          <text class="post-time"> · {{ displayTime(moment.createAt) }} </text>
+          <text class="post-time">
+            · {{ moment.createAt.substring(0, 10) }}
+          </text>
           <view
             v-if="myUserId && myUserId === moment.user.id"
             class="delete"
@@ -95,6 +93,7 @@ import { Pages } from "@/utils/url";
 import { StorageKeys } from "@/utils/const";
 import { EventEmitter, getThumbnail } from "@/utils/utils";
 import { getComments } from "@/apis/comment/comment";
+import { moments as localMoments } from "@/utils/csData.ts";
 
 const props = defineProps<{
   id: string;
@@ -129,8 +128,8 @@ function onClickCatBox(id?: string) {
 const showToastBox = ref(false);
 const gotFishNum = ref(0);
 
-const getData = async () => {
-  moment.value = (await getMomentDetail(getMomentDetailReq)).moment;
+const getData = () => {
+  moment.value = localMoments.find((moment) => moment.id === props.id);
 };
 
 const getCommentsReq = reactive<GetCommentsReq>({

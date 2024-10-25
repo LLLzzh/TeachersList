@@ -8,7 +8,6 @@
           :style="{
             backgroundImage: 'url(' + displayContents[i - 1].imageUrl + ')'
           }"
-          @click="onClickCarousel(displayContents[i - 1])"
         />
       </template>
       <view class="pagination-dots">
