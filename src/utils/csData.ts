@@ -1,6 +1,6 @@
-import { TeacherPreview } from "@/apis/schemas";
+import { Teacher } from "@/apis/schemas";
 
-export const teachers: TeacherPreview[] = [
+export const teachers: Teacher[] = [
   {
     id: 0,
     imgUrl:
@@ -9,7 +9,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "理科楼",
     phone: "",
-    email: ""
+    email: "jygong@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/gjy2/main.psp"
   },
   {
     id: 1,
@@ -19,7 +22,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "xmshi@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/sxm2_25665/main.psp"
   },
   {
     id: 2,
@@ -29,7 +35,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "liling@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "http://www.cs.ecnu.edu.cn/1f/6f/c24531a597871/page.htm"
   },
   {
     id: 3,
@@ -39,7 +48,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "ymliu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/lym2/main.psp"
   },
   {
     id: 4,
@@ -49,7 +61,10 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼 B613 ",
     phone: "",
-    email: ""
+    email: "021-62233370  Email: edwinsha@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://bdislab.tech/sxm.html"
   },
   {
     id: 5,
@@ -59,7 +74,10 @@ export const teachers: TeacherPreview[] = [
     title: "青年研究员",
     office: "理科大楼702B",
     phone: "",
-    email: "jzhou@cs.ecnu.edu.cn"
+    email: "jzhou@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zj2/main.psp"
   },
   {
     id: 6,
@@ -69,7 +87,10 @@ export const teachers: TeacherPreview[] = [
     title: "",
     office: "理科大楼803B",
     phone: "",
-    email: "lizb@cs.ecnu.edu.cn"
+    email: "lizb@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s28/lzb/main.psp"
   },
   {
     id: 7,
@@ -79,7 +100,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任助理研究员",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "373525670@qq.com",
+    university: "",
+    degree: "",
+    homepage: "http://www.cs.ecnu.edu.cnjavascript:void(0);"
   },
   {
     id: 8,
@@ -89,7 +113,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "lwzheng@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s47/zlw/list.psp"
   },
   {
     id: 9,
@@ -99,7 +126,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "jbzhao@mail.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s47/zjb2/list.psp"
   },
   {
     id: 10,
@@ -109,7 +139,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "ddzhu@mail.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s47/zdd/list.psp"
   },
   {
     id: 11,
@@ -119,7 +152,10 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "jqsang@mail.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s47/sjq2/list.psp"
   },
   {
     id: 12,
@@ -129,7 +165,10 @@ export const teachers: TeacherPreview[] = [
     title: "",
     office: "物理楼143-145",
     phone: "021-62233067",
-    email: ""
+    email: "hongdc@dase.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s37/hdc/main.psp"
   },
   {
     id: 13,
@@ -139,7 +178,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "理科大楼615B",
     phone: "62233667",
-    email: ""
+    email: "xtan@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/tx2/main.psp"
   },
   {
     id: 14,
@@ -149,7 +191,10 @@ export const teachers: TeacherPreview[] = [
     title: "青年研究员",
     office: "理科大楼1816B",
     phone: "",
-    email: ""
+    email: "gaoyang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/gy2_23660/main.psp"
   },
   {
     id: 15,
@@ -159,7 +204,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "理科大楼709B",
     phone: "62233309",
-    email: ""
+    email: "dgdong@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/ddg2/main.psp"
   },
   {
     id: 16,
@@ -169,7 +217,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "中北校区理科大楼B802室",
     phone: "",
-    email: "bdli@cs.ecnu.edu.cn"
+    email: "bdli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/lbd/main.psp"
   },
   {
     id: 17,
@@ -179,7 +230,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "中北校区理科大楼B804室",
     phone: "",
-    email: "cli@cs.ecnu.edu.cn"
+    email: "cli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/lc2/main.psp"
   },
   {
     id: 18,
@@ -189,7 +243,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼B804室",
     phone: "",
-    email: "clli@cs.ecnu.edu.cn"
+    email: "clli@cs.ecnu.edu.cn",
+    university: "中国科学技术大学，UCLA",
+    degree: "博士",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/lcl1/main.psp"
   },
   {
     id: 19,
@@ -199,7 +256,10 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼804B",
     phone: "",
-    email: ""
+    email: "kzhang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zk2/main.psp"
   },
   {
     id: 20,
@@ -209,7 +269,10 @@ export const teachers: TeacherPreview[] = [
     title: "青年研究员",
     office: "理科大楼702B",
     phone: "",
-    email: "qchen@cs.ecnu.edu.cn"
+    email: "qchen@cs.ecnu.edu.cn",
+    university: "华东师范大学",
+    degree: "工学博士",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/cq2_21262/main.psp"
   },
   {
     id: 21,
@@ -219,7 +282,10 @@ export const teachers: TeacherPreview[] = [
     title: "青年研究员",
     office: "理科大楼804B",
     phone: "",
-    email: ""
+    email: "qcao@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/cq2/main.psp"
   },
   {
     id: 22,
@@ -229,7 +295,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "中北校区理科大楼B615室",
     phone: "021-62233667",
-    email: "zzzhang@cs.ecnu.edu.cn"
+    email: "zzzhang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp"
   },
   {
     id: 23,
@@ -239,7 +308,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼702B",
     phone: "",
-    email: "wwu@cc.ecnu.edu.cn"
+    email: "wwu@cc.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/ww2/main.psp"
   },
   {
     id: 24,
@@ -249,7 +321,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "中北校区理科大楼802B",
     phone: "",
-    email: "hqian@cs.ecnu.edu.cn"
+    email: "hqian@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/qh/main.psp"
   },
   {
     id: 25,
@@ -259,7 +334,10 @@ export const teachers: TeacherPreview[] = [
     title: "青年研究员",
     office: "中北校区理科大楼B615室",
     phone: "021-62233667",
-    email: "shlin@cs.ecnu.edu.cn"
+    email: "shlin@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/lsh2/main.psp"
   },
   {
     id: 26,
@@ -269,7 +347,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼915B",
     phone: "021-62233362",
-    email: "yli@cs.ecnu.edu.cn"
+    email: "yli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/ly2_19214/main.psp"
   },
   {
     id: 27,
@@ -279,7 +360,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任助理研究员",
     office: "中北校区理科大楼B709室",
     phone: "021-62233309",
-    email: "jhe@cs.ecnu.edu.cn"
+    email: "jhe@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "http://www.cs.ecnu.edu.cn/47/01/c24531a345857/page.htm"
   },
   {
     id: 28,
@@ -289,7 +373,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼B909",
     phone: "021-62233671",
-    email: ""
+    email: "xjlu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/lxj2/main.psp"
   },
   {
     id: 29,
@@ -299,7 +386,10 @@ export const teachers: TeacherPreview[] = [
     title: "青年研究员",
     office: "理科大楼B座707室",
     phone: "021-62233630",
-    email: ""
+    email: "llwang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/wll/main.psp"
   },
   {
     id: 30,
@@ -309,7 +399,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼802B",
     phone: "",
-    email: ""
+    email: "zli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=248187"
   },
   {
     id: 31,
@@ -319,7 +413,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼715B",
     phone: "62233637",
-    email: ""
+    email: "dli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247736"
   },
   {
     id: 32,
@@ -329,7 +427,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼902B",
     phone: "",
-    email: ""
+    email: "hcsong@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/shc/main.psp"
   },
   {
     id: 33,
@@ -339,7 +440,11 @@ export const teachers: TeacherPreview[] = [
     title: "专任助理研究员",
     office: "中北校区理科大楼B707",
     phone: "62233317",
-    email: ""
+    email: "zyying@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247734"
   },
   {
     id: 34,
@@ -349,7 +454,10 @@ export const teachers: TeacherPreview[] = [
     title: "专任副研究员",
     office: "中北校区理科大楼B707",
     phone: "62233317",
-    email: ""
+    email: "ylsun@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/syl2/main.psp"
   },
   {
     id: 35,
@@ -359,7 +467,11 @@ export const teachers: TeacherPreview[] = [
     title: "专任助理研究员",
     office: "中北校区理科大楼B701",
     phone: "62233603",
-    email: ""
+    email: "tlma@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247732"
   },
   {
     id: 36,
@@ -369,7 +481,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼902B",
     phone: "",
-    email: ""
+    email: "chli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247730"
   },
   {
     id: 37,
@@ -379,7 +495,10 @@ export const teachers: TeacherPreview[] = [
     title: "副研究员",
     office: "中北校区 理科大楼B801",
     phone: "62233565",
-    email: ""
+    email: "qzhang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zq2_6410/main.psp"
   },
   {
     id: 38,
@@ -389,7 +508,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼B609室",
     phone: "021-62232205",
-    email: ""
+    email: "lyyu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "http://www.cs.ecnu.edu.cn/c7/af/c24531a247727/page.htm"
   },
   {
     id: 39,
@@ -399,7 +521,10 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼B709室",
     phone: "86-21-62233309",
-    email: ""
+    email: "fxu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/xf2/main.psp"
   },
   {
     id: 40,
@@ -409,7 +534,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼B601",
     phone: "021-6223-3660",
-    email: ""
+    email: "tqwei@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/wtq/main.psp"
   },
   {
     id: 41,
@@ -419,7 +547,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼B609",
     phone: "62233527",
-    email: ""
+    email: "glu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247723"
   },
   {
     id: 42,
@@ -429,7 +561,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中山北路校区理科大楼917B",
     phone: "62233578",
-    email: ""
+    email: "xlhuang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247722"
   },
   {
     id: 43,
@@ -439,7 +575,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼B901室",
     phone: "021-62233559",
-    email: ""
+    email: "gqhe@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247721"
   },
   {
     id: 44,
@@ -449,7 +589,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中山北路校区理科大楼611B",
     phone: "",
-    email: ""
+    email: "qfzhuge@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247720"
   },
   {
     id: 45,
@@ -459,7 +603,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼B801",
     phone: "021-62232801",
-    email: ""
+    email: "gxzhang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247719"
   },
   {
     id: 46,
@@ -469,7 +617,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼B1012A室",
     phone: "+86-21-62231389",
-    email: ""
+    email: "yxie@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247717"
   },
   {
     id: 47,
@@ -479,7 +631,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼911B",
     phone: "021-62233575",
-    email: ""
+    email: "cbwang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247716"
   },
   {
     id: 48,
@@ -489,7 +645,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中山校区理科大楼B605",
     phone: "021-62233370",
-    email: ""
+    email: "lshi@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247715"
   },
   {
     id: 49,
@@ -499,7 +659,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授级高工",
     office: "中北校区理科大楼607B",
     phone: "",
-    email: ""
+    email: "fkshen@ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247714"
   },
   {
     id: 50,
@@ -509,7 +673,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼B503室",
     phone: "62233040",
-    email: ""
+    email: "amzhou@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247712"
   },
   {
     id: 51,
@@ -519,7 +687,10 @@ export const teachers: TeacherPreview[] = [
     title: "副研究员",
     office: "理科大楼B909",
     phone: "62233671",
-    email: ""
+    email: "jzhao@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zj2_6437/main.psp"
   },
   {
     id: 52,
@@ -529,7 +700,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼902B",
     phone: "",
-    email: ""
+    email: "jmzhang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zjm2/main.psp"
   },
   {
     id: 53,
@@ -539,7 +713,10 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼B903室",
     phone: "021-62233665",
-    email: ""
+    email: "zhangwei@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/zw2_6443/main.psp"
   },
   {
     id: 54,
@@ -549,7 +726,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼B座703室",
     phone: "62233635",
-    email: ""
+    email: "yanyang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/yy2/main.psp"
   },
   {
     id: 55,
@@ -559,7 +739,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼B703",
     phone: "62233635",
-    email: ""
+    email: "jyang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/yj2/main.psp"
   },
   {
     id: 56,
@@ -569,7 +752,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼B913b",
     phone: "021-62233579",
-    email: ""
+    email: "jhxu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/xjh2/main.psp"
   },
   {
     id: 57,
@@ -579,7 +765,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼802B",
     phone: "",
-    email: ""
+    email: "jkxie@cs.ecnu.edu.cn",
+    university: "上海交通大学",
+    degree: "博士",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/xjk/main.psp"
   },
   {
     id: 58,
@@ -589,7 +778,10 @@ export const teachers: TeacherPreview[] = [
     title: "讲师",
     office: "中北校区理科大楼B711",
     phone: "62233668",
-    email: ""
+    email: "cyxiao@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/xcy/main.psp"
   },
   {
     id: 59,
@@ -599,7 +791,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼713B",
     phone: "021-62233627",
-    email: ""
+    email: "ybwu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/wyb/main.psp"
   },
   {
     id: 60,
@@ -609,7 +804,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "理科大楼B507",
     phone: "62233799",
-    email: ""
+    email: "xlwang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247700"
   },
   {
     id: 61,
@@ -619,7 +818,10 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼B1816",
     phone: "62233865",
-    email: ""
+    email: "xfwang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp"
   },
   {
     id: 62,
@@ -629,7 +831,10 @@ export const teachers: TeacherPreview[] = [
     title: "副研究员",
     office: "中北校区理科大楼902B",
     phone: "",
-    email: ""
+    email: "fwang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "博士",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/wf2/main.psp"
   },
   {
     id: 63,
@@ -639,7 +844,10 @@ export const teachers: TeacherPreview[] = [
     title: "讲师",
     office: "中北校区理科大楼B909",
     phone: "62233671",
-    email: ""
+    email: "dyshi@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/sdy/main.psp"
   },
   {
     id: 64,
@@ -649,7 +857,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼B609",
     phone: "021-62233527",
-    email: ""
+    email: "jhshen@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247690"
   },
   {
     id: 65,
@@ -659,7 +871,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼804B",
     phone: "",
-    email: ""
+    email: "cmshen@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247689"
   },
   {
     id: 66,
@@ -669,7 +885,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区 理科大楼 B805",
     phone: "62233580",
-    email: ""
+    email: "yqian@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247687"
   },
   {
     id: 67,
@@ -679,7 +899,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼911B",
     phone: "021-62233575",
-    email: ""
+    email: "lzma@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247685"
   },
   {
     id: 68,
@@ -689,7 +913,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼715B",
     phone: "62233637",
-    email: ""
+    email: "yllu@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247684"
   },
   {
     id: 69,
@@ -699,7 +927,11 @@ export const teachers: TeacherPreview[] = [
     title: "研究员",
     office: "中山北路校区理科大楼B717",
     phone: "62233625",
-    email: ""
+    email: "xlin@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247682"
   },
   {
     id: 70,
@@ -709,7 +941,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中山北路3663号理科大楼B915",
     phone: "021-62233362",
-    email: ""
+    email: "hsli@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247681"
   },
   {
     id: 71,
@@ -719,7 +955,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼713B",
     phone: "（8621) 62233627",
-    email: ""
+    email: "mlan @ cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247680"
   },
   {
     id: 72,
@@ -729,7 +969,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中山北路校区理科大楼B709",
     phone: "62233309",
-    email: ""
+    email: "jjin@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/jj2/main.psp"
   },
   {
     id: 73,
@@ -739,7 +982,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科702B",
     phone: "",
-    email: ""
+    email: "zrjiang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247677"
   },
   {
     id: 74,
@@ -749,7 +996,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼B705",
     phone: "62233510",
-    email: ""
+    email: "lhe@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247676"
   },
   {
     id: 75,
@@ -759,7 +1010,11 @@ export const teachers: TeacherPreview[] = [
     title: "研究员",
     office: "中北校区理科大楼809B",
     phone: "021-62233608",
-    email: ""
+    email: "hexf@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247675"
   },
   {
     id: 76,
@@ -769,7 +1024,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中山北路校区 理科大楼B913",
     phone: "021-62233579",
-    email: ""
+    email: "alfang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247674"
   },
   {
     id: 77,
@@ -779,7 +1038,11 @@ export const teachers: TeacherPreview[] = [
     title: "教授",
     office: "中北校区理科大楼B807",
     phone: "021-62233560",
-    email: ""
+    email: "fmfang@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247673"
   },
   {
     id: 78,
@@ -789,7 +1052,10 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科楼B711室",
     phone: "021-62233668",
-    email: ""
+    email: "ldou@cs.ecnu.edu.cn",
+    university: "华东师范大学",
+    degree: "博士",
+    homepage: "https://faculty.ecnu.edu.cn/_s16/dl2/main.psp"
   },
   {
     id: 79,
@@ -799,7 +1065,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼B603",
     phone: "021-62233578",
-    email: ""
+    email: "lchen@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247670"
   },
   {
     id: 80,
@@ -809,7 +1079,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中北校区理科大楼915B",
     phone: "021-62233362",
-    email: ""
+    email: "ygao@cs.ecnu.edu.cn",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247666"
   },
   {
     id: 81,
@@ -819,7 +1093,11 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "中山北路理科大楼B1009",
     phone: "021-62236532",
-    email: ""
+    email: "",
+    university: "",
+    degree: "",
+    homepage:
+      "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247664"
   },
   {
     id: 82,
@@ -829,6 +1107,9 @@ export const teachers: TeacherPreview[] = [
     title: "副教授",
     office: "理科大楼B505",
     phone: "",
-    email: ""
+    email: "bjiang@deit.ecnu.edu.cn",
+    university: "浙江大学",
+    degree: "博士",
+    homepage: "https://faculty.ecnu.edu.cn/_s8/jb2/main.psp"
   }
 ];

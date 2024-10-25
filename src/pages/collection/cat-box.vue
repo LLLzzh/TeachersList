@@ -14,10 +14,10 @@
 </template>
 
 <script lang="ts" setup>
-import { TeacherPreview } from "@/apis/schemas";
+import { Teacher } from "@/apis/schemas";
 
 const props = defineProps<{
-  teacher: TeacherPreview;
+  teacher: Teacher;
 }>();
 </script>
 

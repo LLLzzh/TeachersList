@@ -1,21 +1,15 @@
 <template>
   <view class="info">
-    <view class="tile" style="width: 16vw">
-      <view class="key">性别</view>
+    <view class="tile" style="width: 49vw">
+      <view class="key">联系电话</view>
       <view class="value">
-        {{ props.cat.sex }}
-      </view>
-    </view>
-    <view class="tile" style="width: 30vw">
-      <view class="key">专业技术职务</view>
-      <view class="value">
-        {{ `青年研究员` }}
+        {{ props.cat.phone }}
       </view>
     </view>
     <view class="tile" style="width: 36vw">
-      <view class="key">联系电话</view>
+      <view class="key">专业技术职务</view>
       <view class="value">
-        {{ `12345678910` }}
+        {{ props.cat.title }}
       </view>
     </view>
   </view>
@@ -23,13 +17,13 @@
     <view class="tile" style="width: 49vw">
       <view class="key">毕业院校</view>
       <view class="value">
-        {{ `华东师范大学` }}
+        {{ props.cat.university }}
       </view>
     </view>
     <view class="tile" style="width: 36vw">
       <view class="key">学位</view>
       <view class="value">
-        {{ `工学博士` }}
+        {{ props.cat.degree }}
       </view>
     </view>
   </view>
@@ -37,7 +31,7 @@
     <view class="tile" style="width: 49vw">
       <view class="key">办公地址</view>
       <view class="value">
-        {{ `理科大楼A123` }}
+        {{ props.cat.office }}
       </view>
     </view>
     <view class="tile" style="width: 36vw">
@@ -59,17 +53,17 @@
     <view class="tile" style="width: 88vw">
       <view class="key">电子邮箱</view>
       <view class="value">
-        {{ `test@cs.ecnu.edu.cn` }}
+        {{ props.cat.email }}
       </view>
     </view>
   </view>
 </template>
 
 <script lang="ts" setup>
-import { Cat } from "@/apis/schemas";
+import { Cat, Teacher } from "@/apis/schemas";
 
 interface Props {
-  cat: Cat;
+  cat: Teacher;
 }
 
 const props = defineProps<Props>();
@@ -102,6 +96,7 @@ const props = defineProps<Props>();
       font-size: 4vw;
       font-weight: bold;
       width: fit-content;
+      min-height: 5vw;
     }
   }
 }

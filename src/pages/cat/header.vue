@@ -6,18 +6,18 @@
       <!-- <image class="like" mode="widthFix" :src="Icons.Location"/> -->
     </view>
     <view class="second-line">
-      {{ props.cat.color }}
+      {{ `计算机科学与技术学院` }}
     </view>
     <view class="line" />
   </view>
 </template>
 
 <script lang="ts" setup>
-import { Cat } from "@/apis/schemas";
+import { Teacher } from "@/apis/schemas";
 
 /* import {Icons} from "@/utils/url"; */
 interface Props {
-  cat: Cat;
+  cat: Teacher;
 }
 
 const props = defineProps<Props>();

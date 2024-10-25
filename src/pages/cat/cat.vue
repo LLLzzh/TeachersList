@@ -17,42 +17,28 @@ import { reactive, ref } from "vue";
 import Header from "@/pages/cat/header.vue";
 import MetaInfo from "@/pages/cat/meta-info.vue";
 import { Cat } from "@/apis/schemas";
-import { getCatDetail } from "@/apis/collection/collection";
-import { GetCatDetailReq } from "@/apis/collection/collection-interfaces";
-import { onPullDownRefresh } from "@dcloudio/uni-app";
-import { refresh } from "@/utils/utils";
+import { teachers } from "@/utils/csData";
 
 const show = ref(false);
 const props = defineProps<{
   id: string;
 }>();
-const getCatDetailReq = reactive<GetCatDetailReq>({
-  catId: props.id
-});
 const cat = ref<Cat>();
-
+console.log(props);
 const mainImgUrl = ref("");
 const goBack = () => {
   uni.navigateBack({
     delta: 1
   });
 };
-const loadCat = async () => {
-  const res = await getCatDetail(getCatDetailReq);
-  cat.value = res.cat;
-  mainImgUrl.value = cat.value.avatars[0];
-};
 
-loadCat().then(() => {
-  refresh(show);
-});
-
-onPullDownRefresh(() => {
-  loadCat().then(() => {
-    refresh(show);
-    uni.stopPullDownRefresh();
-  });
-});
+const teacher = teachers.find((teacher) => teacher.id == props.id);
+show.value = true;
+console.log(teacher);
+if (teacher) {
+  cat.value = teacher;
+  mainImgUrl.value = teacher.imgUrl;
+}
 </script>
 
 <style lang="scss" scoped>
