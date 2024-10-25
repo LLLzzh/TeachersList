@@ -48,7 +48,7 @@
               </view>
               <view class="lower">
                 <view class="time font-sm">
-                  {{ displayTime(post.createAt) }}
+                  {{ post.createAt.substring(0, 10) }}
                 </view>
                 <view v-if="post.comments" class="font-sm"
                   >{{ post.comments }}条回复</view
@@ -73,7 +73,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import { getPostPreviews } from "@/apis/post/post";
 import { onReachBottom } from "@dcloudio/uni-app";
 import { displayTime } from "@/utils/time";
@@ -82,6 +82,7 @@ import { onClickCover, onClickPost } from "./utils";
 import { Post } from "@/apis/schemas";
 import { getPrefetchData, PrefetchResp } from "@/apis/prefetch";
 import { getThumbnail } from "@/utils/utils";
+import { posts } from "@/utils/csData";
 
 interface Props {
   keyword?: string;
@@ -90,53 +91,8 @@ interface Props {
 
 const props = defineProps<Props>();
 
-let postsData = reactive<Post[]>([]);
-let token: string;
-const fetch = async () => {
-  const res = await getPostPreviews({
-    paginationOption: {
-      lastToken: token
-    },
-    onlyOfficial: props.onlyOfficial,
-    searchOptions: props.keyword
-      ? {
-          key: props.keyword
-        }
-      : undefined
-  });
-  token = res.token;
-  return res.posts;
-};
-
-const getPostPreviewsAsync = async () => {
-  if (token || props.keyword || props.onlyOfficial) {
-    return fetch();
-  }
-  let res: PrefetchResp;
-  try {
-    res = await getPrefetchData();
-  } catch (reason) {
-    return fetch();
-  }
-  if (!res?.firstPostPreviewsResp?.posts) {
-    return fetch();
-  }
-  token = res.firstPostPreviewsResp.token;
-  const posts = res.firstPostPreviewsResp.posts;
-  res.firstPostPreviewsResp = undefined;
-  return posts;
-};
-
-async function createPostsDataBatch() {
-  const posts = await getPostPreviewsAsync();
-  postsData.push(...posts);
-}
-
-createPostsDataBatch();
-
-onReachBottom(() => {
-  void createPostsDataBatch();
-});
+let postsData = ref<Post[]>([]);
+postsData.value = posts;
 </script>
 
 <style lang="scss" scoped>

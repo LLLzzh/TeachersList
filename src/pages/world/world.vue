@@ -133,7 +133,8 @@ body {
 .navbar {
   position: fixed;
   background-color: #fafcff;
-  display: flex;
+  //display none
+  display: none;
   color: #b8b8b8;
   font-size: calc(13 / 390 * 100vw);
   align-items: center;
@@ -173,7 +174,7 @@ body {
 }
 
 .top-padding {
-  height: calc(56 / 390 * 100vw);
+  height: 2vw;
 }
 
 .empty-bottom {

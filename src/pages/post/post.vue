@@ -73,6 +73,7 @@ import { Icons, Pages } from "@/utils/url";
 import { StorageKeys } from "@/utils/const";
 import { EventEmitter, getThumbnail } from "@/utils/utils";
 import { getComments } from "@/apis/comment/comment";
+import { posts } from "@/utils/csData.ts";
 
 const props = defineProps<{
   id: string;
@@ -85,6 +86,7 @@ const getPostDetailReq = reactive<GetPostDetailReq>({
 
 // Post
 const post = ref<Post>();
+post.value = posts.find((post) => post.id === props.id);
 const myUserId = uni.getStorageSync(StorageKeys.UserId);
 
 const commentDoLikeMap = new Map<string, number>();
@@ -107,10 +109,6 @@ const commentDoLike = async (id: string) => {
 
 const isShowDeleteDialogue = ref(false);
 
-const getData = async () => {
-  post.value = (await getPostDetail(getPostDetailReq)).post;
-};
-
 const getCommentsReq = reactive<GetCommentsReq>({
   type: CommentType.Post,
   page: 0,
@@ -121,42 +119,8 @@ const comments = ref<Comment[]>([]);
 let allCommentsLoaded = false;
 let isCommentsLoaded = true;
 let page = 0;
-const localGetCommentsData = async () => {
-  await Promise.all(
-    Array.from(commentDoLikeMap.keys()).map((id) => commentDoLike(id))
-  );
-  commentDoLikeMap.clear();
-  isCommentsLoaded = false;
-  getComments({
-    id: props.id,
-    type: CommentType.Post,
-    page: page
-  }).then((res) => {
-    comments.value.push(...res.comments);
-    isCommentsLoaded = true;
-    page += 1;
-    if (!res.comments?.length) {
-      allCommentsLoaded = true;
-    }
-  });
-};
 
-const firstLevelComment = ref<Comment>();
 const writeBoxFocus = ref(false);
-const afterBlur = () => {
-  writeBoxFocus.value = false;
-  replyComment.value = undefined;
-  if (!selectComment.value) {
-    firstLevelComment.value = undefined;
-  } else {
-    firstLevelComment.value = selectComment.value;
-  }
-};
-
-const focusReplyComment = (comment: Comment) => {
-  writeBoxFocus.value = true;
-  firstLevelComment.value = comment;
-};
 
 const showDeleteDialogue = () => {
   isShowDeleteDialogue.value = true;
@@ -183,17 +147,15 @@ const deleteThisPost = () => {
 };
 
 let initLock = false;
-const init = async () => {
+const init = () => {
   if (!isReplyOpened.value) {
     if (initLock) return;
     initLock = true;
-    await getData();
     page = 0;
     getCommentsReq.page = 0;
     comments.value = [];
     allCommentsLoaded = false;
     isCommentsLoaded = true;
-    await localGetCommentsData();
     initLock = false;
   } else {
     isReplyOpened.value = false;
@@ -209,11 +171,7 @@ onLoad(() => {
   init();
 });
 
-onReachBottom(() => {
-  if (isCommentsLoaded && !allCommentsLoaded) {
-    localGetCommentsData();
-  }
-});
+onReachBottom(() => {});
 
 onPullDownRefresh(() => {
   setTimeout(function () {
@@ -240,14 +198,12 @@ const isReplyOpened = ref(false);
 
 function onClickReplies(comment: Comment) {
   selectComment.value = comment;
-  firstLevelComment.value = comment;
   isReplyOpened.value = true;
 }
 
 function closeReply() {
   writeBoxFocus.value = false;
   selectComment.value = undefined;
-  firstLevelComment.value = undefined;
   replyComment.value = undefined;
   isReplyOpened.value = false;
 }
