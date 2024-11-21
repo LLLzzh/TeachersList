@@ -2315,10 +2315,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@dcloudio/types@^3.3.2":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@dcloudio/types/-/types-3.3.3.tgz#2a0bebcd970a7d26a2c3f7365c21e070de66abca"
-  integrity sha512-xfp88QOJ2fgCzv49HhEGrX0L+3xDsCyyvcoApL7z0J1Lr7tqPUkxqAVBe9zBlKsDX/mO9mNj7NzKIisHfp+fNQ==
+"@dcloudio/types@^3.4.14":
+  version "3.4.14"
+  resolved "https://registry.yarnpkg.com/@dcloudio/types/-/types-3.4.14.tgz#be8248e992c2f74591d0824edeb27cdf6477a5a7"
+  integrity sha512-VolQeZfTh8pQFsr2IlfIVX93blfvGTuBoJuZUc7iWOqtHV8gDrq6fXLhzsVlgZyuhhRZLOxlo33rkEqnY+ucAw==
 
 "@dcloudio/uni-app-plus@3.0.0-3090620231104002":
   version "3.0.0-3090620231104002"
